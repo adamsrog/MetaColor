@@ -1,0 +1,62 @@
+/* 
+  Localizable.strings
+  RAKulerizer
+
+  Created by Roger Adams on 5/22/13.
+  Copyright (c) 2013 Simplicity Studios. All rights reserved.
+*/
+
+// English (en)
+
+// Globals
+"SAVE" = "Save";
+"DELETE" = "Delete";
+"CANCEL" = "Cancel";
+"BACK" = "Back";
+"OK" = "OK";
+"YES" = "Yes";
+"NO" = "No";
+"NONE" = "None";
+"SIMPLICITYSTUDIOS" = "Simplicity Studios";
+"METACOLOR" = "MetaColor";
+"ADOBE_KULER" = "Adobe Kuler";
+
+// Alert Views
+"CONNECTIONERROR" = "Connection Error";
+"NOKULERS_TITLE" = "Error";
+"NOKULERS_MSG" = "Unable to retrieve palettes.";
+"NAMEKULER" = "Kuler Name";
+"ERROR_NONAME" = "You must enter a name. Your palette has not been saved.";
+"DELETION_MSG" = "Are you sure you want to delete";
+"TRYAGAIN" = "Try Again";
+"DISMISS" = "Dismiss";
+"CHANGE_HEX" = "Enter a Hex Code value:";
+"CHANGE_COLOR" = "Enter a value for";
+"VALUE_RANGE" = "(0-255)";
+"RED" = "Red";
+"GREEN" = "Green";
+"BLUE" = "Blue";
+"HEX" = "Hex";
+
+// Button labels
+"BUTTON_SEARCH" = "Search";
+"BUTTON_SAVED" = "Saved";
+"BUTTON_CREATE" = "Create";
+"BUTTON_SETTINGS" = "Settings";
+"BUTTON_TOPRATED" = "Top Rated";
+"BUTTON_POPULAR" = "Popular";
+"BUTTON_NEWEST" = "Newest";
+"BUTTON_RANDOM" = "Random";
+
+// Config Screen Strings
+"CONFIG_TITLE" = "Settings";
+"FAQ" = "FAQ";
+"FAQ_SUBTEXT" = "Display introduction screen";
+"ABOUT" = "About";
+"SETTINGS" = "Settings";
+"FOOTER_TEXT" = "Footer text...";
+
+// About Company Screens Strings
+"VISIT_WEBSITE_BUTTON" = "Visit Website";
+"KULER_WEBSITE_BUTTON" = "Kuler Website";
+"SIMPLICITYSTUDIOS_ABOUT" = "Simplicity Studios was founded with the goal of creating and providing simple and elegant solutions for every day problems. We believe technology can be a tool to enable and empower people, rather than overcomplicate their lives. Visit our website to learn how we can deliver solutions that can help bring your next big idea to life.";

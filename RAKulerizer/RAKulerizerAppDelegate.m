@@ -10,9 +10,36 @@
 
 @implementation RAKulerizerAppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
+    [TestFlight takeOff:@"c3d5a0d4-f961-4a3c-8066-1a6894e33d6b"];
+    
+    // style navigation bar
+    NSDictionary *navBarAppearanceDict = @{UITextAttributeFont : [UIFont fontWithName:@"HelveticaNeue-Light" size:20.0], UITextAttributeTextColor : [UIColor whiteColor]};
+    [[UINavigationBar appearance] setTitleTextAttributes:navBarAppearanceDict];
+    
+    NSDictionary *barButtonAppearanceDict = @{UITextAttributeFont : [UIFont fontWithName:@"HelveticaNeue-Light" size:12.0]};
+    [[UIBarButtonItem appearance] setTitleTextAttributes:barButtonAppearanceDict forState:UIControlStateNormal];
+
+    //NSLog(@"%@", [UIFont fontNamesForFamilyName:@"Sansumi"]);
+    
+    // splash screen fade out
+    UIImageView *splash;
+    if ([UIScreen mainScreen].bounds.size.height == 568) {
+        splash = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Default-568h"]];
+    } else {
+        splash = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Default"]];
+    }
+    
+    [self.window.rootViewController.view addSubview:splash];
+    [UIView animateWithDuration:1.5
+                     animations:^{
+                         splash.alpha = 0.0;
+                     }
+                     completion:^(BOOL finished) {
+                         [splash removeFromSuperview];
+                     }];
+    
     return YES;
 }
 							
